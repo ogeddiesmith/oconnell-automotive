@@ -22,7 +22,7 @@ PHONE_HUMAN = "(779) 396-4746"
 PHONE_E164  = "+17793964746"
 CITY        = "Kankakee"
 STATE       = "IL"
-SITE        = "REPLACE: https://oconnellautomotive.com"
+SITE        = "https://ogeddiesmith.github.io/oconnell-automotive"  # change to the custom domain the day it is bought
 NOINDEX     = True
 ASSET_V     = "2"
 
@@ -197,6 +197,16 @@ def page():
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{desc}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{SITE}/">
+  <meta property="og:site_name" content="{BRAND}">
+  <meta property="og:image" content="{SITE}/images/og.jpg?v={ASSET_V}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{BRAND}. I fix cars in {CITY}. Call or text {PHONE_HUMAN}.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{desc}">
+  <meta name="twitter:image" content="{SITE}/images/og.jpg?v={ASSET_V}">
   <link rel="icon" href="brand/logo-mark.svg">
   <style>{CSS}</style>
   <script type="application/ld+json">{json.dumps(schema)}</script>
