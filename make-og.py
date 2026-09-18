@@ -8,13 +8,13 @@ Writes images/og.jpg at 1200x630, the size Facebook, Messenger, iMessage, X and
 LinkedIn all crop from.
 
 This matters more than usual here. His growth plan is Facebook community groups,
-Marketplace and people texting the link to a neighbour. A link with no preview
-image is a grey box, and a grey box does not get tapped.
+Marketplace and people texting the link to a neighbor. A link with no preview
+image is a gray box, and a gray box does not get tapped.
 
 Design rules for a card that is often seen at 300px wide in a feed:
   - phone number large enough to read without opening the link
   - four short lines maximum
-  - one accent colour, high contrast
+  - one accent color, high contrast
 """
 import os, subprocess
 
