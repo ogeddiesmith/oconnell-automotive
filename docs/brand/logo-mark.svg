@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="O'Connell Automotive mark">
+  <polygon points="194.00,100.00 147.00,181.41 53.00,181.41 6.00,100.00 53.00,18.59 147.00,18.59" fill="#16130F"/>
+  <polygon points="175.00,100.00 137.50,164.95 62.50,164.95 25.00,100.00 62.50,35.05 137.50,35.05" fill="none" stroke="#E8622A" stroke-width="7.0"/>
+  <text x="100.0" y="115.0" text-anchor="middle"
+        font-family="'Helvetica Neue', Helvetica, Arial Black, Arial, sans-serif" font-weight="800" font-size="60.0"
+        fill="#F1ECE4" letter-spacing="-1.60">OC</text>
+</svg>

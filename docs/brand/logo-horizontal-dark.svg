@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" width="760" height="180" role="img" aria-label="O'Connell Automotive, auto repair, Kankakee Illinois">
+  <polygon points="165.60,90.00 129.60,152.35 57.60,152.35 21.60,90.00 57.60,27.65 129.60,27.65" fill="#16130F"/>
+  <polygon points="151.20,90.00 122.40,139.88 64.80,139.88 36.00,90.00 64.80,40.12 122.40,40.12" fill="none" stroke="#E8622A" stroke-width="5.4"/>
+  <text x="93.60000000000001" y="101.7" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial Black, Arial, sans-serif"
+        font-weight="800" font-size="46.8" fill="#F1ECE4">OC</text>
+  <text x="219.60000000000002" y="82.8" font-family="'Helvetica Neue', Helvetica, Arial Black, Arial, sans-serif" font-weight="800"
+        font-size="48.6" fill="#F1ECE4" letter-spacing="-0.72">O'CONNELL</text>
+  <text x="219.60000000000002" y="122.4" font-family="'Helvetica Neue', Helvetica, Arial Black, Arial, sans-serif" font-weight="800"
+        font-size="26.1" fill="#E8622A" letter-spacing="5.04">AUTOMOTIVE</text>
+  <text x="219.60000000000002" y="153.9" font-family="'Helvetica Neue', Helvetica, Arial Black, Arial, sans-serif" font-weight="700"
+        font-size="15.8" fill="#F1ECE4" opacity=".55"
+        letter-spacing="3.60">AUTO REPAIR &#183; KANKAKEE, IL</text>
+</svg>

@@ -15,7 +15,7 @@ H2s, one heading per service, a served-areas block, and LocalBusiness JSON-LD.
 REPLACE: markers are decisions Joe has not made. deploy-site.sh refuses to publish
 if placeholders remain AND noindex has been removed.
 """
-import json, os
+import json, os, shutil
 
 BRAND       = "O'Connell Automotive"          # REPLACE: confirm, see brand/BRANDING-AND-NAMES.md
 PHONE_HUMAN = "(779) 396-4746"
@@ -351,9 +351,16 @@ def page():
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))
+    # The site builds into docs/, and GitHub Pages publishes only main /docs (since 2026-10-10), so build.py,
+    # make-og.py and this README are not served. images/ and brand/ stay the source; the build copies them in.
+    out = os.path.join(here, "docs")
+    os.makedirs(out, exist_ok=True)
     html = page()
-    open(os.path.join(here, "index.html"), "w", encoding="utf-8").write(html)
+    open(os.path.join(out, "index.html"), "w", encoding="utf-8").write(html)
     if NOINDEX:
-        open(os.path.join(here, "robots.txt"), "w", encoding="utf-8").write("User-agent: *\nDisallow: /\n")
-    print(f"wrote index.html ({len(html):,} bytes)")
+        open(os.path.join(out, "robots.txt"), "w", encoding="utf-8").write("User-agent: *\nDisallow: /\n")
+    open(os.path.join(out, ".nojekyll"), "w").close()
+    for d in ("images", "brand"):
+        shutil.copytree(os.path.join(here, d), os.path.join(out, d), dirs_exist_ok=True)
+    print(f"wrote docs/index.html ({len(html):,} bytes)")
     print(f"noindex: {NOINDEX}   placeholders: {html.count('REPLACE:')}   services: {len(SERVICES)}")
